@@ -1,5 +1,8 @@
 # React Typescript Hardhat Starter
 
+[project-demo]: react-typescript-hardhat-starter.gif
+
+![project-demo]
 Starter kit for building dApp using React, Typescript and Hardhat
 
 ## Quick start
