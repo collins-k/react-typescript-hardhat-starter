@@ -1,17 +1,46 @@
-# React-Typescript-Hardhat-Starter
+# React Typescript Hardhat Starter
 
 Starter kit for building dApp using React, Typescript and Hardhat
 
-# Sample Hardhat Project
+## Quick start
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+The first things you need to do are cloning this repository and installing its
+dependencies:
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+```sh
+git clone https://github.com/collins-k/react-typescript-hardhat-starter
+cd react-typescript-hardhat-starter
+npm install
 ```
+
+Once installed, let's run Hardhat's testing network:
+
+```sh
+npx hardhat node
+```
+
+Then, on a new terminal, go to the repository's root folder and run this to
+deploy your contract:
+
+```sh
+npx hardhat run scripts/deploy.ts --network localhost
+```
+
+Finally, we can run the frontend with:
+
+```sh
+cd frontend
+npm install
+npm start
+```
+
+Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
+need to have [Metamask](https://metamask.io) installed and listening to
+`localhost 8545`.
+
+## Troubleshooting
+
+- `Invalid nonce` errors: if you are seeing this error on the `npx hardhat node`
+  console, try resetting your Metamask account. This will reset the account's
+  transaction history and also the nonce. Open Metamask, click on your account
+  followed by `Settings > Advanced > Reset Account`.
