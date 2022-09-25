@@ -2,7 +2,6 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import contractAddress from "./contracts/contract-address.json";
-import Connect from "./components/Connect";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
           Lock contract was deployed to the address <br />{" "}
           <code style={{ color: "#61dafb" }}>{contractAddress.Lock}</code>
         </p>
-        <Connect />
       </header>
     </div>
   );
