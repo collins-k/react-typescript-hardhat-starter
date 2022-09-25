@@ -29,7 +29,7 @@ export const Navbar = () => {
 
   return (
     <div className="container">
-      <h3 className="logo">React Typscript Hardhat Starter</h3>
+      <h3 className="logo">React TypeScript Hardhat Starter</h3>
       {connectors.map((connector) => (
         <button
           className="btn"
